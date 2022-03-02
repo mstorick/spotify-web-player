@@ -153,6 +153,18 @@ export const PLAYLIST = [
 					"https://p.scdn.co/mp3-preview/fb27d89173d867bb163599d5b1027816e98d8819?cid=6d083ea30aaa46428fbf1590d31f6750",
 				trackTime: "0:30",
 			},
+                        {
+                                index: "4",
+                                songName: "To The Stars",
+                                songimg:
+                                        "https://i.scdn.co/image/ab67616d0000485145ec6fceefb51f0ab5913454",
+                                songArtist: "Braken",
+                                link:
+                                        "https://slider.kz/download/474499131_456340413/202/cs3-4v4/s/v1/acmp/-nqpr99BpBrjcjkEcbhWxlXEmLslXfgkjcSzLXI-9CS-Lx5ZrGCDDbR3_hthCcp-2lQujdc3MwF9wrCVY5qGUtQdKxs_UgWSc5A3C0tZHKK8uTvWCd4pd9TBTR71nBFCuZc84lKTsM5swlocG7YHIUlLUXC13eO-sAifN51PJzzvmUfdyA/Braken%20-%20To%20The%20Stars.mp3?extra=null",
+                                trackTime: "3:22",
+                        },
+
+
 		],
 	},
 	{
