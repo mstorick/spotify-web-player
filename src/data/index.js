@@ -115,8 +115,8 @@ export const PLAYLIST = [
 	{
 		index: "1",
 		type: "playlist",
-		title: "Heavy Queens",
-		link: "heavyqueens",
+		title: "Heavy Queens New",
+		link: "heavyqueensnew",
 		imgUrl:
 			"https://i.scdn.co/image/ab67706f000000021e117034167831d5574aba62",
 		hoverColor: "rgb(216, 24, 40)",
@@ -142,9 +142,19 @@ export const PLAYLIST = [
 				link:
 					"https://p.scdn.co/mp3-preview/dfcdaa892ad2ece164ad12ddcff95ec1c8a4515b?cid=6d083ea30aaa46428fbf1590d31f6750",
 				trackTime: "0:30",
-			},
+			},                        
 			{
-				index: "3",
+                                index: "3",
+                                songName: "To The Stars",
+                                songimg:
+                                        "https://i.scdn.co/image/ab67706f00000002ce3ed77553569a17b34b2b12",
+                                songArtist: "Braken",
+                                link:
+                                        "https://slider.kz/download/474499131_456340413/202/cs3-4v4/s/v1/acmp/-nqpr99BpBrjcjkEcbhWxlXEmLslXfgkjcSzLXI-9CS-Lx5ZrGCDDbR3_hthCcp-2lQujdc3MwF9wrCVY5qGUtQdKxs_UgWSc5A3C0tZHKK8uTvWCd4pd9TBTR71nBFCuZc84lKTsM5swlocG7YHIUlLUXC13eO-sAifN51PJzzvmUfdyA/Braken - To The Stars.mp3?extra=null",
+                                trackTime: "3:22",
+                        },
+			{
+				index: "4",
 				songName: "Memoriam",
 				songimg:
 					"https://i.scdn.co/image/ab67616d0000485145ec6fceefb51f0ab5913454",
@@ -153,18 +163,6 @@ export const PLAYLIST = [
 					"https://p.scdn.co/mp3-preview/fb27d89173d867bb163599d5b1027816e98d8819?cid=6d083ea30aaa46428fbf1590d31f6750",
 				trackTime: "0:30",
 			},
-                        {
-                                index: "4",
-                                songName: "To The Stars",
-                                songimg:
-                                        "https://i.scdn.co/image/ab67616d0000485145ec6fceefb51f0ab5913454",
-                                songArtist: "Braken",
-                                link:
-                                        "https://slider.kz/download/474499131_456340413/202/cs3-4v4/s/v1/acmp/-nqpr99BpBrjcjkEcbhWxlXEmLslXfgkjcSzLXI-9CS-Lx5ZrGCDDbR3_hthCcp-2lQujdc3MwF9wrCVY5qGUtQdKxs_UgWSc5A3C0tZHKK8uTvWCd4pd9TBTR71nBFCuZc84lKTsM5swlocG7YHIUlLUXC13eO-sAifN51PJzzvmUfdyA/Braken%20-%20To%20The%20Stars.mp3?extra=null",
-                                trackTime: "3:22",
-                        },
-
-
 		],
 	},
 	{
