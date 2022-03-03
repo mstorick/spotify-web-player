@@ -8,3 +8,5 @@ A front-end clone project of the Spotify Web Player. The project was created usi
 ## Tech/Framework Used
 * React
 * CSS
+
+## Used Cloudflare Pages to deploy
