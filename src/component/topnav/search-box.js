@@ -7,8 +7,12 @@ function SearchBox() {
     <div className={styles.SeachBox}>
       <Icons.Search />
       <input placeholder="Artists, songs, or podcasts" maxLength="80" 
-        onSubmit={function(e) {
-          console.log(e.target.value);
+        onKeyUp={function(e) {
+          if (e.key === "Enter") {
+            e.preventDefault();
+            console.log("Enter key pressed!!!!!");
+            console.log(e.target.value);
+          }
           <Redirect to="blah" />
         }} />
     </div>
