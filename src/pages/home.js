@@ -9,49 +9,43 @@ import styles from "./home.module.css";
 import { PLAYLIST } from '../data/index'
 
 function Home(){
-    return (
-        <div className={styles.Home}>
-            <div className={styles.HoverBg}></div>
-            <div className={styles.Bg}></div>
+  return (
+    <div className={styles.Home}>
+      <div className={styles.HoverBg}></div>
+      <div className={styles.Bg}></div>
 
-            <Topnav />
-            <div className={styles.Content}>
-                <section>
-                    <div className={styles.SectionTitle}>
-                        <TitleL>İyi günler</TitleL>
-                    </div>
+      <Topnav />
+      <div className={styles.Content}>
+        <section>
+          <div className={styles.SectionTitle}>
+            <TitleL>Have a nice day</TitleL>
+          </div>
 
-                    <div className={styles.SectionCards}>
-                        {PLAYLIST.map((item) => {
-                            return (
-                                <PlaylistCardS 
-                                    key={item.title}
-                                    data={item}
-                                />
-                            );
-                        })}
-                    </div>
-                </section>
+          <div className={styles.SectionCards}>
+            {PLAYLIST.map((item) => {
+              return (
+                <PlaylistCardS key={item.title} data={item} />
+              );
+            })}
+          </div>
+        </section>
 
-                <section>
-                    <div className={styles.SectionTitle}>
-                        <TitleM>Yakında çalınanlar</TitleM>
-                    </div>
-                    
-                    <div className={styles.SectionCardsMedium}>
-                        {PLAYLIST.slice(0, 6).map((item) => {
-                            return (
-                                <PlaylistCardM 
-                                    key={item.title}
-                                    data={item}
-                                />
-                            );
-                        })}
-                    </div>
-                </section>
-            </div>
-        </div>
-    );
+        <section>
+          <div className={styles.SectionTitle}>
+            <TitleM>Those who soon get stolen</TitleM>
+          </div>
+          
+          <div className={styles.SectionCardsMedium}>
+            {PLAYLIST.slice(0, 6).map((item) => {
+              return (
+                <PlaylistCardM key={item.title} data={item} />
+              );
+            })}
+          </div>
+        </section>
+      </div>
+    </div>
+  );
 }
 
 export default Home;
