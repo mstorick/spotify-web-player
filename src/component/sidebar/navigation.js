@@ -8,20 +8,20 @@ function Navigation() {
   const router = useLocation();
 
   return (
-    <div className={styles.navBtns}>
-      {MENU.map((menu) => {
-        const selected = router.pathname === menu.path
+  <div className={styles.navBtns}>
+    {MENU.map((menu) => {
+    const selected = router.pathname === menu.path
 
-        return (
-            <NavLink to={menu.path} exact activeClassName="activeLink" key={menu.title}>
-                <button className={styles.button}>
-                    {selected ? menu.iconSelected : menu.icon}
-                    <TextBoldM>{menu.title}</TextBoldM>
-                </button>
-            </NavLink>
-            );
-      })}
-    </div>
+    return (
+      <NavLink to={menu.path} exact activeClassName="activeLink" key={menu.title}>
+        <button className={styles.button}>
+          {selected ? menu.iconSelected : menu.icon}
+          <TextBoldM>{menu.title}</TextBoldM>
+        </button>
+      </NavLink>
+      );
+    })}
+  </div>
   )
 }
 

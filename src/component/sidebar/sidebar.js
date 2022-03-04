@@ -11,48 +11,48 @@ function Sidebar() {
   const [isMouseDown, setisMouseDown] = useState(false);
   const { x } = useMousePosition();
 
-    useEffect(() => {
-      if (!isMouseDown) return false;
+  useEffect(() => {
+    if (!isMouseDown) return false;
   
-      const handleMove = () => {
-        if(x > 200 && x < 316){
-          SetWidth(x);
-        }
-      };
+    const handleMove = () => {
+    if(x > 200 && x < 316){
+      SetWidth(x);
+    }
+    };
   
-      const handleUp = () => {
-        setisMouseDown(false);
-      };
+    const handleUp = () => {
+    setisMouseDown(false);
+    };
   
-      document.addEventListener("mousemove", handleMove);
-      document.addEventListener("mouseup", handleUp);
-      return () => {
-        document.removeEventListener("mousemove", handleMove);
-        document.removeEventListener("mouseup", handleUp);
-      };
-    });
+    document.addEventListener("mousemove", handleMove);
+    document.addEventListener("mouseup", handleUp);
+    return () => {
+    document.removeEventListener("mousemove", handleMove);
+    document.removeEventListener("mouseup", handleUp);
+    };
+  });
 
-    return (
-      <nav className={styles.SideNavbar} style={{width: `${width}px`}}>
-        <div className={styles.Fixed}>
-          <div>
-              <Logo/>
-          </div>
-          <div>
-              <Navigation />
-          </div>
-          <div>
-              <Playlist />
-          </div>
-        </div>
-        <div 
-            className={`${styles.changeWidth} ${isMouseDown ? styles.ActiveChange : ''}`}
-            onMouseDown={() => {
-              setisMouseDown(true);
-            }}
-        ></div>
-      </nav>
-    );
+  return (
+    <nav className={styles.SideNavbar} style={{width: `${width}px`}}>
+    <div className={styles.Fixed}>
+      <div>
+        <Logo/>
+      </div>
+      <div>
+        <Navigation />
+      </div>
+      <div>
+        <Playlist />
+      </div>
+    </div>
+    <div 
+      className={`${styles.changeWidth} ${isMouseDown ? styles.ActiveChange : ''}`}
+      onMouseDown={() => {
+        setisMouseDown(true);
+      }}
+    ></div>
+    </nav>
+  );
 }
   
 export default Sidebar;
